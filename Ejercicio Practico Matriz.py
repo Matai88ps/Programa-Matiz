@@ -9,13 +9,15 @@ while True:
 
         # En el caso que introduzcan un 0.
         if N == 0:
-            print("El valor 0 no genera una matriz, por favor introduce un valor mayor de 0. ")
+            print("El valor " ,N, " no genera una matriz, por favor introduce un valor mayor de 0. ")
+            N = []
             continue
 
         else:
             # Si introducen un numero negativo.
             if N < 0:
-                print("El valor es menor que 0, por favor introduce un valor mayor de 0. ")
+                print("El valor " ,N, " es menor que 0, por favor introduce un valor mayor de 0. ")
+                N = []
                 continue
 
             else:
@@ -28,7 +30,7 @@ while True:
                         matriz[i].append(random.randint(0, 9))
 
                 # Mostrando en pantalla la matiz.
-                print("La matriz es la siguiente: ")
+                print("La matriz " ,N,"x",N, "es la siguiente: ")
                 for i in matriz:
                     a = str(i)[1:-1]
                     print(a.ljust(0, " "))
@@ -55,6 +57,7 @@ while True:
                 print("La suma de cada columna es: ")
                 c = str(suma_coltotal)[1:-1]
                 print(c.ljust(0, " "))
+                N = []
                 break
 
     # Excepcion cuando introduzcan una letra, simbolo o decimales.
