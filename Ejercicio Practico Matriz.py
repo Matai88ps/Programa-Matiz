@@ -1,5 +1,6 @@
-#Empezamos con while para que el programa no se pare 
-# cuando introduciomos valores no permitidos.
+"""Empezamos con while para que el programa no se pare 
+cuando introduciomos valores no permitidos"""
+
 while True:
     
     try:
